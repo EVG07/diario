@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poema Semanal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ventana emergente 1 (cuenta regresiva) -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <p>!Atención esta página esta creada para queka¡, esto se autodestruira en <span id="countdown">5</span> segundos.</p>
+        </div>
+    </div>
+
+    <!-- Ventana emergente 2 (contraseña) -->
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <p>Introduce la contraseña(mi nombre del cuento):</p>
+            <input type="password" id="passwordInput">
+            <button onclick="checkPassword()">Acceder</button>
+        </div>
+    </div>
+
+    <!-- Contenedores de semanas -->
+    <div class="container">
+        <h1>Contenido Semanal</h1>
+        <div class="semana" onclick="openWeek(1)">Semana 1</div>
+        <div class="semana" onclick="openWeek(2)">Semana 2</div>
+        <div class="semana" onclick="openWeek(3)">Semana 3</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
