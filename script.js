@@ -32,7 +32,7 @@ function showPopup2() {
 // Verificación de contraseña
 function checkPassword() {
     const password = document.getElementById("passwordInput").value;
-    if (password === "john") {
+    if (password === "quesito") {
         localStorage.setItem("savedPassword", password); // Guarda la contraseña en localStorage
         document.getElementById("popup2").style.display = "none"; // Oculta PopUp2
     } else {
