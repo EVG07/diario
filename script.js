@@ -22,7 +22,7 @@ startCountdown();
 // Función para mostrar PopUp2 si la contraseña no está guardada
 function showPopup2() {
     const savedPassword = localStorage.getItem("savedPassword");
-    if (savedPassword === "john") {
+    if (savedPassword === "quesito") {
         console.log("Contraseña ya guardada. PopUp2 no se mostrará.");
     } else {
         document.getElementById("popup2").style.display = "flex"; // Muestra PopUp2
