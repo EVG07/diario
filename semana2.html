@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <title>Semana 2</title>
+</head>
+<body>
+    
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+                <h3>Lo Que No Se Nombra</h3>
+                <p>
+                    Siempre volvemos,<br>
+                    como mareas que se alejan<br>
+                    pero nunca aprenden a irse del todo.
+                </p>
+                <p>
+                    Fuimos dos caminos paralelos,<br>
+                    cruzándonos en silencios y risas,<br>
+                    en despedidas que nunca fueron finales,<br>
+                    en momentos que nunca tuvieron nombre.
+                </p>
+                <p>
+                    El destino juega con nosotros,<br>
+                    nos deja ir, nos trae de vuelta,<br>
+                    como si supiera que hay algo<br>
+                    que aún no hemos terminado de entender.
+                </p>
+                <p>
+                    Tal vez no era el tiempo,<br>
+                    tal vez nunca lo será,<br>
+                    pero mientras el mundo gire<br>
+                    y nuestras voces se encuentren,<br>
+                    seguiremos aquí,<br>
+                    sin promesas, sin preguntas,<br>
+                    con esa química<br>
+                    que ni el olvido sabe borrar.
+                </p>
+            </div>
+            <!-- Cara trasera -->
+            <div class="back">
+                <h3>Invitación</h3>
+                <p>Me gustaría invitarte a salir algún día. ¿Te gustaría tomar un café juntos? 
+                    <br>
+                    <a href="flor.html">un regalo extra >.<</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <audio id="sorpresaAudio" autoplay muted>
+        <source src="pecu.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
