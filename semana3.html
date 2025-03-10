@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <title>SEMANA 3!!!</title>
+</head>
+<body>
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+                <h3>Quiero que sepas</h3>
+                <p>
+                    Quiero que oigas lo que no digo.<br>
+                    Quiero que veas más allá de mis ojos.<br>
+                    Quiero que sientas el amor que te ofrezco,<br>
+                    y que entiendas lo que mi silencio grita.
+                </p>
+                <p>
+                    Quiero que me tomes en serio<br>
+                    cuando te hablo con las manos temblorosas,<br>
+                    y que me sostengas cuando mi miedo<br>
+                    me hace tropezar con mis propias dudas.
+                </p>
+                <p>
+                    Quiero que sepas que, aunque no lo diga siempre,<br>
+                    te quiero de una manera constante y profunda.<br>
+                    Que mi risa tiene un poco de tu risa,<br>
+                    y que mi vida tiene mucho de tu vida.
+                </p>
+                <p>
+                    Quiero saber si quieres caminar conmigo,<br>
+                    si nuestras huellas pueden mezclarse en un solo camino,<br>
+                    si podemos sostenernos sin lastimarnos,<br>
+                    y si nuestro hoy puede ser parte de un mañana.
+                </p>
+            </div>            
+            <!-- Cara trasera -->
+            <div class="back">
+                <h3>Quekis!!</h3>
+                <p>En esta tercera semana quisiera decirte lo que significas para mi, y como me haces sentir, 
+                    incluso cuando me llega un mensaje tuyo me haces feliz. Sé que no soy la persona más experimentada 
+                    o lista y aveces me equivoco pero créeme que no es intencional porque cuando estoy contigo ¿cómo no ponerme nervioso? 
+                    Haces que sienta algo que no siento con nadie. Si este sentimiento no es mutuo no puedo hacer nada para cambiarlo pero 
+                    si sientes la mitad de lo que yo siento por tí quisiera que intentemos algo.
+                    PD. La canción se llama "Will He" y es de Joji ;)
+            </div>
+        </div>
+    </div>
+    <audio id="sorpresaAudio" autoplay>
+        <source src="joji.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
