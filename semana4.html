@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <title>Semana 2</title>
+</head>
+<body>
+    
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+                <h3>Tú eres</h3>
+                <p>Como el sol que despierta tras la fría agonía.<br>
+                    Cada palabra tuya, tan simple y tan pura,<br>
+                    derriba mis miedos, mi alma asegura.</p>
+            
+                    <p>Cuando te vi, el mundo se detuvo,<br>
+                    los ruidos callaron, el miedo se perdió.<br>
+                    Tus ojos, dos faros en mi noche oscura,<br>
+                    hicieron que todo doliera menos y la vida brillara segura.</p>
+            
+                    <p>No sé qué tienes, no sé qué provocas,<br>
+                    pero al verte, mi corazón desenfoca.<br>
+                    Soy invencible, imparable, sin miedo,<br>
+                    si tu sonrisa me acompaña en cada enredo.</p>
+            
+                    <p>Eres el impulso que al alma levanta,<br>
+                    la chispa que arde y la calma que encanta.<br>
+                    Si tú estás cerca, no hay nada imposible:<br>
+                    mi fuerza renace, me siento invencible.</p>
+            </div>
+            <!-- Cara trasera -->
+            <div class="back">
+                <h3>Quiero decirte</h3>
+                <p>No sé hasta dónde nos lleve esto, pero quiero que sepas que estoy aquí, no solo para compartir momentos bonitos, sino también para apoyarte en los difíciles. Me gustaría que esto no solo sea algo pasajero, sino algo que podamos construir juntos, paso a paso, sin prisa pero con intención. Si tú también lo quieres, aquí estaré.</p>
+           
+            </div>
+        </div>
+    </div>
+    
+    <audio id="sorpresaAudio" autoplay muted>
+        <source src="pista4.mp3x" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
