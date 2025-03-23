@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="cora.css">
+    <title>Semana 5</title>
+</head>
+<body>
+    <script src="corazon.js"></script>
+
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+
+                <h3>Lo que me haces ser</h3>
+                <p>Cambié sin darme cuenta, buscando mi camino, <br>
+                de las sombras al sol, dejando el miedo divino. <br>
+                Cada paso me acercaba a lo que ahora soy,<br>
+                y tú, en tu silencio, me mostraste el hoy.</p>
+        
+                <p>Fui reconstruyéndome con cada gesto tuyo, <br>
+                sanando heridas, olvidando lo oscuro. <br>
+              El tiempo no fue mío, pero contigo aprendí, <br>
+                a ser más fuerte, a ser más de lo que vi.</p>
+        
+                <p>No sé si es demasiado pronto para hablar, <br>
+                pero a tu lado todo se siente en su lugar. <br>
+               No es solo un impulso, ni una simple sensación, <br>
+               es algo profundo, lo que nace en el corazón. </p>
+        
+                <p>Te quiero, y aunque me parezca extraño, <br>
+                sé que contigo hallar é mi mejor versión, <br>
+               y quiero ser lo mismo para ti, sin ningún engaño. <br>
+               Juntos, buscando un crecimiento mutuo, <br>
+              haciendo que el amor sea siempre nuestro rumbo.</p>
+            </div>
+            <!-- Cara trasera -->
+            <div class="back">
+                <h3>Mi pilar mas grande</h3>
+                <p>Te has vuelto una parte importante de mi vida, alguien que me hace sentir bien y me da paz. <br> Me encantaría pasar más tiempo contigo, salir a disfrutar, estar juntos de manera más tranquila, o incluso llamarte para hablar de cualquier cosa.</p>
+                <p> Espero que te haya gustado el rediseño de la página, y que te guste lo que he escrito para ti. </p>
+                <br>
+                <a href="rosas.html">el regalo prometido</a>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="sorpresaAudio" autoplay muted>
+        <source src="pista5.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.currentTime = 40;
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
