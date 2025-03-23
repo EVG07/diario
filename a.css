@@ -1,7 +1,7 @@
-/* Estilos generales */
+ /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #aebea3;
+    background-color: #1a1a1a; /* Fondo oscuro para un estilo futurista */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,6 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    color: white;
 }
 
 /* Estilos de la lectura-container */
@@ -18,7 +19,7 @@ body {
     max-width: 400px;
     height: 70%; /* Aumentamos el alto para que sea más largo */
     max-height: 600px; /* Definimos una altura máxima */
-    background-color: white;
+    background-color: #000000; /* Fondo negro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
@@ -53,7 +54,7 @@ body {
 
 /* Frente de la tarjeta */
 .lectura-container .front {
-    background-color: #c0a1ae;
+    background-color: #2c2c2c; /* Fondo oscuro para la parte frontal */
     color: white;
     font-size: 16px;
     line-height: 1.6;
@@ -65,8 +66,8 @@ body {
 
 /* Parte posterior de la tarjeta */
 .lectura-container .back {
-    background: #4c4c4c; /* Fondo oscuro para el reverso */
-    color: white;
+    background: #ffd700; /* Fondo dorado para el reverso */
+    color: #2c2c2c; /* Texto del color del fondo de la parte frontal */
     transform: rotateY(180deg);
     font-size: 16px;
     line-height: 1.6;
@@ -124,6 +125,7 @@ body {
         font-size: 14px;
     }
 }
+
 @media (min-width: 800px) {
     .lectura-container {
         max-width: 600px; /* Aumentamos el máximo de tamaño para pantallas más grandes */
@@ -137,16 +139,18 @@ body {
         font-size: 14px;
     }
 }
+
 .lectura-container a {
     display: inline-block;
     margin-top: 15px;
     padding: 10px;
-    background-color: #c0a1ae;
-    color: white;
+    background-color: #c0c0c0; /* Color morado para los botones */
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .lectura-container a:hover {
-    background-color: #967784;
+    background-color: #c0c0c0ad; /* Color morado más oscuro al pasar el mouse */
 }
