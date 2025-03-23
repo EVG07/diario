@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poema Semanal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cora.css">
 </head>
 <body>
 
+    
     <!-- Ventana emergente 1 (cuenta regresiva) -->
     <div id="popup1" class="popup">
         <div class="popup-content">
@@ -18,7 +20,7 @@
     <!-- Ventana emergente 2 (contraseña) -->
     <div id="popup2" class="popup">
         <div class="popup-content">
-            <p>Introduce la contraseña:</p>
+            <p>Introduce la contraseña(mi nombre del cuento):</p>
             <input type="password" id="passwordInput">
             <button onclick="checkPassword()">Acceder</button>
         </div>
@@ -31,10 +33,12 @@
         <div class="semana" onclick="openWeek(2)">Semana 2</div>
         <div class="semana" onclick="openWeek(3)">Semana 3</div>
         <div class="semana" onclick="openWeek(4)">Semana 4</div>
-              <a href="parati.html">  <div class="semana" >URGENTE!!!!!</div></a>
+      <a href="parati.html">  <div class="semana" >21 de marzo</div></a>
+      <div class="semana" onclick="openWeek(5)">Semana 5</div>
 
     </div>
 
     <script src="script.js"></script>
+    <script src="corazon.js"></script>
 </body>
 </html>
