@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="cora.css">
+    <title>Semana 6</title>
+</head>
+<body>
+    <script src="corazon.js"></script>
+
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+
+                <h3>Entre los dos</h3>
+                <p>Estamos hechos de grietas,<br>
+                   de noches en vela y palabras que duelen,<br>
+                   de promesas gastadas<br>
+                   y heridas que nadie más puede ver.</p>
+                
+                <p>Pero entre los dos,<br>
+                   tal vez podamos recoger los pedazos,<br>
+                   coser lo que el tiempo rompió<br>
+                   y hacer del daño algo menos pesado.</p>
+                
+                <p>No quiero salvarte,<br>
+                   ni quiero que me salves,<br>
+                   solo caminar a tu lado,<br>
+                   aprender a sanar sin miedo a caer.</p>
+                
+                <p>Porque sí, estamos quebrados,<br>
+                   pero aún seguimos aquí.<br>
+                   Y si el dolor nos hizo cenizas,<br>
+                   que el fuego nos vuelva a unir.</p>
+                
+                
+            </div>
+            <!-- Cara trasera -->
+            <div class="back">
+                <p>A veces siento que soy solo una marioneta,<br>
+                    movida por hilos invisibles,<br>
+                    esperando a que decidas si soy alguien en tu vida<br>
+                    o solo una sombra pasajera.</p>
+                 
+                 <p>No sé qué somos,<br>
+                    no sé si siquiera importo de verdad<br>
+                    o si todo esto es solo un reflejo<br>
+                    de lo que quiero creer.</p>
+                <p><i>Si alguna vez te atreves a ponerle nombre a esto,</i><br>
+                    <i>si tus sentimientos son algo más que un eco perdido,</i><br>
+                    <i>si realmente sientes lo mismo...</i></p>
+                 
+                 <p><i>puedes decírmelo.<br>
+                    Puedes contestar por mensaje.<br>
+                    Puedes hacer que esto tenga sentido.</i></p>
+                                 
+                <a href="https://youtu.be/gxpZACTREPs?si=J3ENhiLbWcj-9J9A">cuando puedas ve la canción</a>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="sorpresaAudio" autoplay muted>
+        <source src="pista7.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
