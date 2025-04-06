@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="cora.css">
+    <title>Semana 7</title>
+</head>
+<body>
+    <script src="corazon.js"></script>
+
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+
+                <h2>Mi debilidad</h2> 
+                <br>
+                <p>Te quiero…<br>
+                y es más que ayer,<br>
+                como si cada palabra tuya<br>
+                fuera sol y yo viviera en sombras.</p>
+                <br>
+                <p>Como Clark al mirar a Lois<br>
+                sabiendo que un día podría no volver,<br>
+                pero aún así elige volar hacia ti.</p>
+                <br>
+                <p>Como Peter sosteniendo la mano de MJ<br>
+                en medio de un mundo que siempre quiere arrebatártela,<br>
+                y aún así, no suelta.</p>
+                <br>
+                <p>Te quiero, y cada día más…<br>
+                y eso me da miedo.<br>
+                No porque no seas real,<br>
+                sino porque sí lo eres,<br>
+                y yo, a veces, me siento de papel.</p>
+                <br>
+              
+            </div>
+            <!-- Cara trasera -->
+            <div class="back">
+                <br><br>
+                <p>Como Mark sangrando por dentro<br>
+                    mientras Eve cree que aún puede salvarlo.<br>
+                    Como Gambito rozando a Rogue<br>
+                    con todo el amor que no puede tocar.</p>
+                    <br>
+                    <p>¿Qué pasa si un día despierto<br>
+                    y no estás al otro lado de mi luz?<br>
+                    ¿Qué pasa si un amanecer te busco…<br>
+                    y no te encuentro más?</p>
+                    <br>
+                    <p>Te quiero,<br>
+                    aunque a veces quiera huir de lo que siento,<br>
+                    porque amarte me da poder…<br>
+                    pero también me da miedo.</p>
+                    
+                
+                <a href="espejo.html">baia baia</a>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="sorpresaAudio" autoplay muted>
+        <source src="pista8.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.currentTime = 27; // Ajusta el tiempo de inicio según sea necesario
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
