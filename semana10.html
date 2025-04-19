@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="cora.css">
+    <title>Semana 7</title>
+</head>
+<body>
+    <script src="corazon.js"></script>
+
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+
+                <h2>Palabras...</h2> 
+                <p>No soy de palabras,<br>
+                    ni de mensajes que se alargan hasta el amanecer.<br>
+                    Pero contigo,<br>
+                    hasta el silencio me dan ganas de escribirlo.<br>
+                    <br>
+
+                    No planeaba querer así.<br>
+                    Lo mío siempre fue esquivar lo imposible,<br>
+                    no encariñarme con lo que parecía<br>
+                    demasiado bueno para ser real.<br>
+                    Pero tú,<br>
+                    rompiste la estadística con solo mirarme. <br>
+                    <br>
+
+                    
+                  No solo quiero quererte bonito,<br>
+                    quiero desearte como se desea lo sagrado y lo prohibido.<br>
+                    Con las manos temblando,<br>
+                    el alma ardiendo,<br>
+                    y el corazón rendido. <br>
+                    <br>
+                    Quiero que mis caricias y besos hablen por mí,<br>
+                    que mis ojos te digan lo que no te envio por mensaje.<br>
+                    Porque aunque no soy de escribir cosas lindas,<br>
+                    te pienso con una intensidad que ni las palabras alcanzan.</p>
+                    
+                   
+              
+            </div>
+            <!-- Cara trasera -->
+            <div class="back">
+                
+                <p>Tú llegaste donde no se llega.<br>
+                    No con promesas,<br>
+                    sino con esa forma tuya de hacerme sentir<br>
+                    que lo imposible…<br>
+                    simplemente no se aplica a nosotros.<br>
+                    <br>
+                    
+                    Y si después de todo esto,<br>
+                    aún queda alguna duda,<br>
+                    entonces dime tú...</p>
+                    
+                    <p><strong>¿Seguimos conteniéndonos o nos rendimos de una vez?<br>
+                    Porque entre tú y yo,<br>
+                    ya no hay espacio para seguir esperando.</strong></p>
+                    
+                    <a href="">seguir</a> <br> <a href="#" onclick="mostrarAlerta()">rendirse</a>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="sorpresaAudio" autoplay muted>
+        <source src="pista10.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+          function mostrarAlerta() {
+            alert("Se intento y no se logro.");
+        }
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.currentTime = 9 ; // Ajusta el tiempo de inicio según sea necesario
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
