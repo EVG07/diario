@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="cora.css">
+    <title>Semana 10!!!!!!!!!!!!!</title>
+</head>
+<body>
+    <script src="corazon.js"></script>
+
+    <div class="lectura-container">
+        <!-- Contenedor principal -->
+        <div class="card">
+            <!-- Cara frontal -->
+            <div class="front">
+
+                <h2>Afrodita</h2> 
+                <p>Hay días que nacen comunes, pero contigo, hasta el aire parece cincelado por dioses. <br>
+                El mundo puede seguir girando sin nombre, pero a tu lado, todo tiene sentido. <br>
+                Las horas se vuelven mármol dorado, y nuestros silencios, esculturas que ni el tiempo osa tocar. <br>
+                <br>
+              
+                Contigo, hasta el caminar más sencillo es desfile de imperios, <br>
+              y nuestras miradas cruzadas son pactos antiguos, juramentos secretos grabados en estrellas. <br>
+              
+                No somos eco de promesas vacías,<br>
+                somos fuego que decide arder sin permiso, sin plan, solo instinto y verdad. <br>
+                <br>
+              
+               Las palabras se quedan cortas, los días se hacen breves, <br>
+               y el universo entero parece querer detenerse para vernos existir. 
+                <br>
+                <br>
+              
+                Nosotros no necesitamos alas para volar, ni caminos para encontrarnos. <br>
+                Nos basta un instante, una mirada, y el mundo deja de ser lo que era. <br>
+                <br>
+              
+                Que el mundo siga girando ciego, ajeno; <br>
+               nosotros ya conquistamos algo que pocos entienden: <br>
+               el arte de estar, simplemente estar, y ser inmortales en lo simple.</p>
+                   
+              
+            </div>
+            <!-- Cara trasera -->
+            <div class="back">
+                <h2>Qué piensas si?</h2>
+              <p> Y si todo esto que sentimos no cabe en citas planeadas...<br>
+                ¿qué te parece si simplemente me dejas acompañarte en tu semana?<br>
+                Sin horarios, sin planes gigantes.<br>
+                Solo tú y yo, donde sea, como sea.</p> 
+
+                <p>pd: hoy en la 10 semana quise algo tranquilo pero FIJATE EN LA LETRA 🗣️🗣️🗣️. <br> canción: tú-maye</p>
+                    
+            </div>
+        </div>
+    </div>
+    
+    <audio id="sorpresaAudio" autoplay muted>
+        <source src="pista11.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+         
+        // Obtén el elemento de audio
+        const audio = document.getElementById("sorpresaAudio");
+
+        // Intenta desactivar el mute después de un breve retraso
+        setTimeout(() => {
+            audio.currentTime = 15 ; // Ajusta el tiempo de inicio según sea necesario
+            audio.muted = false; // Desactiva el mute
+        }, 1000); // 1 segundo de retraso (ajusta según sea necesario)
+    </script>
+</body>
+</html>
