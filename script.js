@@ -22,7 +22,7 @@ startCountdown();
 // Función para mostrar PopUp2 si la contraseña no está guardada
 function showPopup2() {
     const savedPassword = localStorage.getItem("savedPassword");
-    if (savedPassword === "quesito") {
+    if (savedPassword === "queka1106") {
         console.log("Contraseña ya guardada. PopUp2 no se mostrará.");
     } else {
         document.getElementById("popup2").style.display = "flex"; // Muestra PopUp2
@@ -32,7 +32,7 @@ function showPopup2() {
 // Verificación de contraseña
 function checkPassword() {
     const password = document.getElementById("passwordInput").value;
-    if (password === "quesito") {
+    if (password === "queka1106") {
         localStorage.setItem("savedPassword", password); // Guarda la contraseña en localStorage
         document.getElementById("popup2").style.display = "none"; // Oculta PopUp2
     } else {
@@ -44,3 +44,4 @@ function checkPassword() {
 function openWeek(weekNumber) {
     window.open(`semana${weekNumber}.html`, "_blank");
 }
+
