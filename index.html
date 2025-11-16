@@ -3,45 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poema Semanal</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="cora.css">
-</head>
-<body>
+    <title>Us</title>
 
-    <button onclick="playaudio()">MÚSICA DE AMBIENTE CLICK AQUI</button>
+    <link rel="stylesheet" href="cora.css">
+    <link rel="stylesheet" href="book.css">
+</head>
 
     <!-- Ventana emergente 1 (cuenta regresiva) -->
-    <div id="popup1" class="popup">
+   <div id="popup1" class="popup">
         <div class="popup-content">
-            <p>!Atención esta página esta creada para quekita¡, esto se autodestruira en <span id="countdown">5</span> segundos.</p>
+            <p>!Atención esta página esta creada para queka¡, esto se autodestruira en <span id="countdown">5</span> segundos.</p>
         </div>
     </div>
 
     <!-- Ventana emergente 2 (contraseña) -->
     <div id="popup2" class="popup">
         <div class="popup-content">
-            <p>Introduce la contraseña(mi nombre del cuento):</p>
+            <p>Introduce la contraseña:</p>
             <input type="password" id="passwordInput">
             <button onclick="checkPassword()">Acceder</button>
         </div>
     </div>
-
-    <!-- Contenedores de semanas -->
-    <div class="container">
-        <h1>Contenido Semanal</h1>
-
-        <div class="semana" onclick="openWeek(4)">Semana 4</div>
-      <a href="parati.html">  <div class="semana" >21 de marzo</div></a>
-      <div class="semana" onclick="openWeek(5)">Semana 5</div>
- <div class="semana" onclick="openWeek(6)">Semana 6</div>
-    <div class="semana" onclick="openWeek(7)">Semana 6.1</div>
-        <div class="semana" onclick="openWeek(8)">Semana 7</div>
-        <div class="semana" onclick="openWeek(9)">Semana 8</div>
-         <div class="semana" onclick="openWeek(10)">Semana 9</div>
-         <div class="semana" onclick="openWeek(11)">Semana 10!!!</div>
-        
+    <body onbeforeunload="sessionStorage.setItem('scroll', window.scrollY)" 
+      onload="window.scrollTo(0, sessionStorage.getItem('scroll'))">
+  <div class="book" id="book">
+    <!-- Portada izquierda -->
+    <div class="page cover" id="cover-left">
+      <div class="content">
+        <h1>Nuestro Libro</h1>
+        <h3>Contenido Semanal</h3>
+        <p>"El mayor miedo no es el rechazo, es el miedo a entregarse completamente
+            a alguien, solo para descubrir que no están dispuestos a amarte de la misma forma." – Khaled Hosseini
+        </p>
+      </div>
     </div>
+
+    <!-- Páginas del libro -->
+    <div class="page" id="p1">
+        <div class="content contenedor-tit">
+          <h1>semana 1</h1>
+          <p>el pecu</p>
+          <button onclick="entrar(1)">Entrar</button>
+        </div>
+    </div>
+
+
+    <div class="page" id="p2">
+     <div class="content contenedor-tit">
+        <h1>semana 2</h1>
+        <p></p>
+        <button onclick="entrar(2)">Entrar</button>
+      </div>
+    </div>
+
+    <div class="page" id="p3">
+      <div class="content contenedor-tit">
+        <h1>semana 3</h1>
+        <p></p>
+        <button onclick="entrar(3)">Entrar</button>
+      </div>
+    </div>
+
+    <div class="page" id="p4">
+      <div class="content contenedor-tit">
+        <h1>semana 4</h1>
+        <p></p>
+        <button onclick="entrar(4)">Entrar</button>
+      </div>
+    </div>
+     <div class="page" id="p5">
+      <div class="content contenedor-tit">
+        <h1>semana 5</h1>
+        <p></p>
+        <button onclick="entrar(5)">Entrar</button>
+      </div>
+    </div>
+     <div class="page" id="p6">
+      <div class="content contenedor-tit">
+        <h1>semana 6</h1>
+        <p></p>
+        <button onclick="entrar(6)">Entrar</button>
+      </div>
+    </div>
+     <div class="page" id="p7">
+      <div class="content contenedor-tit">
+        <h1>semana 7</h1>
+        <p></p>
+        <button onclick="entrar(7)">Entrar</button>
+      </div>
+    </div>
+     <div class="page" id="p8">
+      <div class="content contenedor-tit">
+        <h1>semana 8</h1>
+        <p></p>
+        <button onclick="entrar(8)">Entrar</button>
+      </div>
+    </div>
+     <div class="page" id="p9">
+      <div class="content contenedor-tit">
+        <h1>semana 9</h1>
+        <p></p>
+        <button onclick="entrar(9)">Entrar</button>
+      </div>
+    </div>
+     <div class="page" id="p10">
+      <div class="content contenedor-tit">
+        <h1>semana 10</h1>
+        <p></p>
+        <button onclick="entrar(10)">Entrar</button>
+      </div>
+    </div>
+      <div class="page" id="p11">
+      <div class="content contenedor-tit">
+        <h1>semana 11</h1>
+        <p></p>
+        <button onclick="entrar(11)">Entrar</button>
+      </div>
+    </div>
+<div class="page" id="p12">
+      <div class="content contenedor-tit">
+        <h1>semana 12</h1>
+        <p>Tal vez no era perfecto, pero después de todo lo vivido, es más real, más nuestro</p>
+        <button onclick="entrar(12)">Entrar</button>
+      </div>
+    </div>
+    <!-- Controles -->
+    <div class="controls">
+      <button class="btn" id="prev">← Anterior</button>
+      <button class="btn" id="next">Siguiente →</button>
+    </div>
+  </div>
+
+<script>
+  const pages = document.querySelectorAll('.page:not(.cover)');
+  const next = document.getElementById('next');
+  const prev = document.getElementById('prev');
+  let current = 0;
+
+  function updateZIndex() {
+    pages.forEach((page, index) => {
+      page.style.zIndex = pages.length - index;
+    });
+  }
+
+  updateZIndex();
+
+  function regresar(){
+    pages.forEach(page => page.classList.remove('flipped'));
+    current = 0;
+  }
+
+  next.addEventListener('click', () => {
+    if (current < pages.length) {
+      pages[current].classList.add('flipped');
+      current++;
+    }else{
+      regresar();
+    }
+  });
+
+  prev.addEventListener('click', () => {
+    if (current > 0) {
+      current--;
+      pages[current].classList.remove('flipped');
+    }else{
+      pages.forEach(page => page.classList.add('flipped'));
+      current = pages.length;
+    }
+  });
+
+  function entrar_f(){
+    window.location.href="flor.html";
+  }
+
+  function entrar(semana) {
+    sessionStorage.setItem('ultimaSemana', semana);
+    window.location.href = `semana${semana}.html`;
+  }
+</script>
+
+
+    <script src="script.js"></script>
+    <script src="corazon.js"></script>
+</body>
+</html>
+
 <script>
     function playaudio() {
         var audio = new Audio('fondo.mp3');
@@ -50,7 +196,3 @@
     }
 
 </script>
-    <script src="script.js"></script>
-    <script src="corazon.js"></script>
-</body>
-</html>
