@@ -2,8 +2,6 @@
 let countdown = 5;
 const countdownElement = document.getElementById("countdown");
 
-// Ocultar PopUp2 al inicio
-document.getElementById("popup2").style.display = "none";
 
 function startCountdown() {
     let interval = setInterval(() => {
@@ -18,27 +16,6 @@ function startCountdown() {
 }
 
 startCountdown();
-
-// Función para mostrar PopUp2 si la contraseña no está guardada
-function showPopup2() {
-    const savedPassword = localStorage.getItem("savedPassword");
-    if (savedPassword === "queka1106") {
-        console.log("Contraseña ya guardada. PopUp2 no se mostrará.");
-    } else {
-        document.getElementById("popup2").style.display = "flex"; // Muestra PopUp2
-    }
-}
-
-// Verificación de contraseña
-function checkPassword() {
-    const password = document.getElementById("passwordInput").value;
-    if (password === "queka1106") {
-        localStorage.setItem("savedPassword", password); // Guarda la contraseña en localStorage
-        document.getElementById("popup2").style.display = "none"; // Oculta PopUp2
-    } else {
-        alert("Contraseña incorrecta.");
-    }
-}
 
 // Función para abrir la semana en una nueva página
 function openWeek(weekNumber) {
